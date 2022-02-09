@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript CRUD Example Tutorial</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1><center>CRUD APPLICATIONS USING JS</center></h1>
+    <hr />
+    <div class="employee-form">
+      <form
+        onsubmit="event.preventDefault();onFormSubmit();"
+        autocomplete="off"
+      >
+        <div>
+          <label>Full Name:</label
+          ><label class="validation-error hide" id="fullNameValidationError"
+            >This field is required.</label
+          >
+          <input type="text" name="fullName" id="fullName" />
+        </div>
+        <div>
+          <label>Email Id:</label>
+          <input type="text" name="email" id="email" />
+        </div>
+        <div>
+          <label>AGE:</label>
+          <input type="number" name="age" id="AGE" />
+        </div>
+        <div>
+          <label>PHONENUM:</label>
+          <input type="number" name="phonenum" id="PHONENO" />
+        </div>
+        <div>
+            <label>SKILLS:</label>
+            <input type="text" name="skills" id="SKILLS" />
+          </div>
+        <div class="form-action-buttons">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+    <br />
+    <div class="employees-table">
+      <table class="list" id="employeeList">
+        <thead>
+          <tr>
+            <th>Full Name</th>
+            <th>Email Id</th>
+            <th>AGE</th>
+            <th>PHONENO</th>
+            <th>SKILLS</th>
+            <th>ACTION</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
